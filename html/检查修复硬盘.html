@@ -4,11 +4,41 @@
 <meta charset="utf-8">
 <title>检查修复硬盘</title>
 <link rel="icon" href="../img/hyx.ico" type="image/x-icon">
+<style>progress{width:100%;height:36px;border:none;background:#f0f0f0;}progress::-webkit-progress-value{background-color:#00e650;transition:width 0.5s linear;}</style>
+<script>let isLocked=!1,progressTimer=null;function handleCheckClick(){if(isLocked)return;isLocked=!0,alert("网页版不支持此功能"),runSmoothProgress()}function runSmoothProgress(){const e=document.getElementById("进度");e.value=0,clearInterval(progressTimer);let t=0;progressTimer=setInterval(()=>{t+=2,t>=100&&(t=100,clearInterval(progressTimer)),e.value=t},10)}</script>
 </head>
 <body>
 <table align="right">
 <tr>
-<td><a href="../何昱轩系统工具箱网页版.html"><button style="border:none;height:32px;width:32px;background: url(../img/叉.png)"></button></a></td>
+<td><a href="../何昱轩系统工具箱网页版.html"><button style="border:none;height:32px;width:32px;background:url(../img/叉.png)"></button></a></td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td nowrap><img src="../icon/52.png" style="height:32px"></td>
+<td width="100%" align="center"><span style="display:inline-flex;align-items:center;"><font size="7">检查修复硬盘</font><img src="../icon/12.png" style="height:48px;width:48px;margin-left:12px"></span></td>
+</tr>
+</table>
+<br>
+<table width="100%">
+<tr>
+<td><progress id="进度" value="0" max="100"></progress></td>
+</tr>
+</table>
+<br><br>
+<table width="100%">
+<tr>
+<tr>
+<td><select style="width:100%;font-size:20px"><option value="unknown">网页版不支持读取硬盘</option></select></td>
+</tr>
+</td>
+</tr>
+</table>
+<br><br>
+<table width="100%">
+<tr>
+<td><button onclick="handleCheckClick()" style="width:100%;height:80px;font-size:50px;line-height:80px;padding:0;border:none;">开始检查修复</button>
+</td>
 </tr>
 </table>
 </body>
