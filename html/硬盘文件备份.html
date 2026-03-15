@@ -11,38 +11,31 @@
 <td><a href="../何昱轩系统工具箱网页版.html"><button style="border:none;height:32px;width:32px;background: url(../img/叉.png)"></button></a></td>
 </tr>
 </table>
-
 <div align="center"><font size="7">硬盘文件备份</font></div>
 <br>
-
 <table align="center">
 <tr>
 <td><font size="4" color="red">提示：程序会自动在被选择路径上新建备份文件夹"文件备份"</font></td>
 </tr>
 </table>
 <br>
-
 <table width="100%">
 <tr>
 <td nowrap><font size="4">存放备份文件的路径:</font></td>
 <td width="100%"><input type="text" id="savePath" style="width:100%"></td>
 <td nowrap style="padding-left:12px">
-<label for="saveFolderSelect">
-<button>选择路径</button>
-</label>
-<input type="file" id="saveFolderSelect" webkitdirectory directory style="display:none" onchange="if(this.files.length){document.getElementById('savePath').value = this.files[0].webkitRelativePath.split('/')[0]}">
+<button onclick="document.getElementById('saveFileSelect').click()">选择路径</button>
+<input type="file" id="saveFileSelect" webkitdirectory directory mozdirectory multiple style="display:none" onchange="if(this.files.length){document.getElementById('savePath').value = this.files[0].webkitRelativePath.split('/')[0]}">
 </td>
 </tr>
 </table>
 <br>
-
 <table>
 <tr>
-<td><font size="4" color="red">此驱动器还剩 GB可用空间</font></td>
+<td><font size="4" color="green">此驱动器还剩 可用空间</font></td>
 </tr>
 </table>
 <br>
-
 <table width="100%">
 <tr>
 <td><select style="width:100%">
@@ -51,29 +44,23 @@
 </tr>
 </table>
 <br>
-
 <table width="100%">
 <tr>
 <td>
-<label for="sourceFolderSelect">
-<button style="width:100%">选择需备份的文件夹的路径</button>
-</label>
-<input type="file" id="sourceFolderSelect" webkitdirectory directory style="display:none">
+<button style="width:100%" onclick="document.getElementById('sourceFolderSelect').click()">选择需备份的文件夹的路径</button>
+<input type="file" id="sourceFolderSelect" webkitdirectory directory mozdirectory multiple style="display:none">
 </td>
 </tr>
 </table>
 <br>
-
 <table>
 <tr>
-<td><font size="4" color="red">需备份磁盘文件的大小为 GB</font></td>
+<td><font size="4" color="green">需备份磁盘文件的大小为 GB</font></td>
 </tr>
 </table>
 <br><br>
-
 <div align="center">
 <button onclick="alert('网页版不支持备份')"><font size="10">开始备份</font></button>
 </div>
-
 </body>
 </html>
