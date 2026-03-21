@@ -38,9 +38,9 @@ function but3(){
 alert("使用前需将电脑屏幕手动调亮");
 }
 window.addEventListener("load",function(){
-if(!sessionStorage.getItem("hasShown")){
+if(!sessionStorage.getItem("hasShownPopup")){
 var isEnter=confirm("欢迎使用何昱轩系统工具箱网页版！\n是否进入工具箱？");
-sessionStorage.setItem("hasShown","true");
+sessionStorage.setItem("hasShownPopup","true");
 if(!isEnter){window.location.href="下载.html";}
 }
 });
