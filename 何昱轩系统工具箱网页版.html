@@ -32,14 +32,14 @@ function but4(){
 alert("当前已是最新版本");
 }
 function but2(){
-alert("版权归何昱轩所有,未经许可请勿擅自复制,否则需承担相应的法律责任\n何昱轩系统工具箱 2021~2022\nhyx win help HWH\n何昱轩科技有限公司(He Yuxuan Technology Co. , Ltd.)所有");
+alert("版权归何昱轩所有,未经许可请勿擅自复制,否则需承担相应的法律责任\n何昱轩系统工具箱 2021~2022\nhyx win help HWH\n何昱轩科技有限公司(He Yuxuan Technology Co.,Ltd.)所有");
 }
 function but3(){
 alert("使用前需将电脑屏幕手动调亮");
 }
 window.addEventListener("load",function(){
 if(!sessionStorage.getItem("hasShownPopup")){
-var isEnter=confirm("欢迎使用何昱轩系统工具箱!/n版权归何昱轩所有,未经许可请勿擅自复制,否则需承担相应的法律责任/n如因此软件造成的系统损坏,作者概不负责/n提示:系统组件缺失可能导致无法运行
+var isEnter=confirm("欢迎使用何昱轩系统工具箱!\n版权归何昱轩所有,未经许可请勿擅自复制,否则需承担相应的法律责任\n如因此软件造成的系统损坏,作者概不负责\n提示:系统组件缺失可能导致无法运行
 如确认请按下是钮,并遵守以上条款,如不同意以上条款,请点击否钮并退出使用本软件。");
 sessionStorage.setItem("hasShownPopup","true");
 if(!isEnter){window.location.href="下载.html";}
