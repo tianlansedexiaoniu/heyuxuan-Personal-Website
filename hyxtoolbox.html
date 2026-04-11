@@ -4,14 +4,7 @@
 <meta charset="utf-8">
 <title>何昱轩系统工具箱网页版</title>
 <link rel="icon" href="img/hyx.ico" type="image/x-icon">
-<style>
-hr{
-border:1 double #000000;
-width:100%;
-color:#000000;
-size:2;
-}
-</style>
+<style>.x{width:32px;height:32px;padding:0;border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:24px}.x:hover{background:#f44;color:#fff}hr{border:1 double #000;width:100%;color:#000;size:2}</style>
 <script>
 function time(){
 var date=new Date();
@@ -43,7 +36,8 @@ window.addEventListener("load",function(){sessionStorage.removeItem("hasShownPop
 <body style="overflow-x:hidden" onload="time()">
 <table align="right">
 <tr>
-<td><a href="download.html"><button style="border:none;height:32px;width:32px;background:url(img/close.png)"></button></a></td>
+<td><a href="download.html"><button class=x>×</button></a>
+</td>
 </tr>
 </table>
 <tr>
