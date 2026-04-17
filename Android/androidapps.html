@@ -2,32 +2,51 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>安卓自带的应用程序</title>
 <link rel="icon" href="../img/hyx.ico" type="image/x-icon">
 <link rel="stylesheet" href="../css/back.css">
 </head>
 <body>
-<a href="../hyxtoolboxphone.html"><button class="b">ᐸ</button></a>
-<div style="border:none;text-align:center"><font size=8 color=#46A3FF>Android自带的应用程序</font></div>
+<a href="../hyxtoolboxphone.html">
+<button class="b">ᐸ</button>
+</a>
+<div style="border:none;text-align:center">
+<font size="8" color="#46A3FF">Android自带的应用程序</font>
+</div>
 <table align="right">
 <tr>
-<td><p>系统设置</p></td>
-<td><a href="" onclick="f=createElement('iframe');f.src='intent://settings/#Intent;action=android.settings.SETTINGS;component=com.android.settings/.Settings;end;';body.appendChild(f);setTimeout(f.remove,200)"><button style="border:none;height:32px;width:32px;background:url(../icon/16.png)"></button></a></td>
+<td>系统设置</td>
+<td>
+<a href="" onclick="f=createElement('iframe');f.src='intent://settings/#Intent;action=android.settings.SETTINGS;component=com.android.settings/.Settings;end;';body.appendChild(f);setTimeout(f.remove,200)"><button style="border:none;height:32px;width:32px;background:url(../icon/16.png)"></button>
+</a>
+</td>
 </tr>
 <tr>
-<td><p>系统设置</p></td>
-<td><a href="" onclick="f=document.createElement('iframe');f.src='intent://#Intent;action=android.intent.action.MAIN;component=com.android.calendar/.CalendarActivity;end;';document.body.appendChild(f);setTimeout(f.remove,200)"></a>
-<button style="border:none;height:32px;width:32px;background:url(../icon/16.png)"></button></a></td>
+<td>日历</td>
+<td>
+<a href="" onclick="event.preventDefault();f=document.createElement('iframe');f.style.display='none';f.src='intent://#Intent;action=android.intent.action.MAIN;component=com.android.calendar/.CalendarActivity;end';document.body.appendChild(f);setTimeout(f.remove,200)">
+<button style="border:none;height:32px;width:32px;background:url(../icon/16.png)"></button>
+</a>
+</td>
 </tr>
 </table>
 <table>
 <tr>
-<td><p>系统相机</p></td>
-<td><a href="%windir%\system32\iscsicpl.exe://"><button style="border:none;height:32px;width:32px;background: url(../icon/29.png)"></button></a></td>
+<td>系统相机</td>
+<td>
+<a href="" onclick="event.preventDefault();f=document.createElement('iframe');f.style.display='none';f.src='intent://#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.android.camera2/com.android.camera.CameraActivity;end';document.body.appendChild(f);setTimeout(()=>f.remove(),300)">
+<button style="border:none;height:32px;width:32px;background:url(../icon/29.png)"></button>
+</a>
+</td>
+</tr>
 <tr>
-<td><p>工程师模式</p></td>
-<td><a href="javascript:void(0)" onclick=""><button style="border:none;height:32px;width:32px;background:url(../icon/43.png)"></button></a></td>
+<td>工程师模式</td>
+<td>
+<a href="" onclick="event.preventDefault();f=document.createElement('iframe');f.style.display='none';f.src='intent://#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.sprd.engineermode/.EngineerModeActivity;end';document.body.appendChild(f);setTimeout(f.remove,200)">
+<button style="border:none;height:32px;width:32px;background:url(../icon/43.png)"></button>
+</a>
+</td>
 </tr>
 </table>
 </body>
